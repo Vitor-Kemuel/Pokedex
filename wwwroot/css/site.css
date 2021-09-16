@@ -22,12 +22,10 @@ header .logoPokemon{
   font-size: 30px;
   font-weight: bold;
   font-variant: small-caps;
-  background-color: #fff;
   margin: 3px;
   padding: 2px 4px;
-  border-style: inset;
-  border-color: black;
   border-radius: 20px;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 1));
 }
 header a{
   text-decoration: none;
@@ -36,6 +34,7 @@ header a{
   padding: 10px;
   cursor: pointer;
   transition: .10s ease all;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 1));
 }
 header a:hover{
   background-color: rgb(199, 199, 199);
@@ -104,15 +103,18 @@ header a:hover{
   height: 600px;
   width: 300px;
   position: relative;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 1)); 
 }
 
 .fotoPokemon{
   margin-top: 70px;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 1));
 }
 .pokemonName{
   font-weight: bold;
   font-size: 30px;
   color: black;
+  
 }
 .infoPokedex{
   font-weight: bold;
@@ -130,6 +132,7 @@ header a:hover{
 .indexPokemon div{
   display: flex;
   justify-content: center;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 1));
 }
 
 .indexPokemon p{
