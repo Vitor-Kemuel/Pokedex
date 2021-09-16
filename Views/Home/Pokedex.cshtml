@@ -1,0 +1,30 @@
+@using pokemon.Models
+@model List<Pokemon>
+
+@{
+    ViewBag.Title = "Pokedex";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pokedex">
+    @foreach (var pokemon in Model)
+    {
+        <div class="cardPokemon">
+            <img class="fotoPokemon" src="@Url.Content(pokemon.Img)" alt="">
+            <div class="infoPokemon">
+                <h2 class="pokemonName" >@pokemon.Nome</h2>
+                <div>
+                    <div class="tipoPokemon">
+                        <p class="infoPokedex">Tipo:</p>
+                        <p>@pokemon.Tipo</p>
+                        <div class="indexPokemon" >
+                            <div>
+                                <p>@pokemon.Id</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

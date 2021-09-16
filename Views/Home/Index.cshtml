@@ -1,0 +1,30 @@
+﻿@using pokemon.Models
+@model List<Pokemon>
+@{
+    ViewBag.Title = "Lista de Pokémons";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<div class="tabelaPokemon">
+    <table class="table table-dark table-striped table-hover">
+        <tr>
+            <th>Id</th>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Tipo</th>
+        </tr>
+
+        <h1>Você já encontrou @Model.Count pokémon</h1>
+
+        @foreach(var pokemon in Model)
+        {
+            <tr>
+                <td>@pokemon.Id</td>
+                <td>
+                    <img src="@Url.Content(pokemon.Img)" alt="@pokemon.Nome" class="imagemListaPokemon">
+                </td>
+                <td>@pokemon.Nome</td>
+                <td>@pokemon.Tipo</td>
+            </tr>
+        }
+    </table>
+</div>
